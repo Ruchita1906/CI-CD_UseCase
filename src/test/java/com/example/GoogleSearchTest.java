@@ -8,6 +8,7 @@ public class GoogleSearchTest extends BaseTest {
     public void testGoogleSearch() {
         GooglePage google = new GooglePage(driver);
         google.openGoogle();
-        google.search("Selenium WebDriver tutorial");
+       //google.search("Selenium WebDriver tutorial");
+       google.search("Selenium");
     }
 }
