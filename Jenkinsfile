@@ -5,7 +5,7 @@ pipeline {
             steps {
                 echo 'test start'
                 dir('C:\\Users\\ruchi\\OneDrive\\Desktop\\CI-CD_UseCase') {
-                    bat 'mvn ruchita'
+                    bat 'mvn test'
                 }
                 echo 'test end'
             }
