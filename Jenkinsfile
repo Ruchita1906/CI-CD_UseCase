@@ -12,6 +12,13 @@ pipeline {
             post {
                 always {
                     archiveArtifacts artifacts: '**/target/surefire-reports/**/*.*', allowEmptyArchive: true
+               
+// Publish HTML report (if generated)
+            publishHTML([
+                reportDir: 'target/surefire-reports',
+                reportFiles: 'index.html',
+                reportName: 'Test Report'
+])
                 }
             }
         }
