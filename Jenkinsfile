@@ -9,6 +9,11 @@ pipeline {
                 }
                 echo 'test end'
             }
+            post {
+                always {
+                    archiveArtifacts artifacts: 'C:\\Users\\ruchi\\OneDrive\\Desktop\\CI-CD_UseCase\\target\\surefire-reports\\**', allowEmptyArchive: true
+                }
+            }
         }
     }
 }
