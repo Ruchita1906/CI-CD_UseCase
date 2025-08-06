@@ -11,7 +11,7 @@ pipeline {
             }
             post {
                 always {
-                    archiveArtifacts artifacts: 'C:\\Users\\ruchi\\OneDrive\\Desktop\\CI-CD_UseCase\\target\\surefire-reports\\**', allowEmptyArchive: true
+                    archiveArtifacts artifacts: '**/target/surefire-reports/**/*.*', allowEmptyArchive: true
                 }
             }
         }
